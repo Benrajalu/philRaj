@@ -16,3 +16,5 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 gem "tzinfo-data", platforms: [:mswin, :mingw]
 
 gem "middleman-deploy"
+
+gem 'middleman-imageoptim'

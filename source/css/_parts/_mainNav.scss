@@ -35,7 +35,7 @@
 				&.popTrigger{
 					background:$green;
 					padding:5px 15px;
-					@include border-radius(20px);
+					@include border-radius(3px);
 					color:$white;
 					&:hover{
 						background:$blue;
@@ -173,7 +173,7 @@
 				text-indent:-999px;
 				vertical-align: middle;
 				position:relative;
-				top:-1px;
+				-webkit-appearance: none;
 				@include transition(all 200ms ease-out);
 				&:after, &:before{
 					@include transition(all 200ms ease-out);
