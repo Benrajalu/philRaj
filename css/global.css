@@ -1,0 +1,1690 @@
+/* line 5, /Users/benrajalu/.rvm/rubies/ruby-1.9.3-p545/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, /Users/benrajalu/.rvm/rubies/ruby-1.9.3-p545/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, /Users/benrajalu/.rvm/rubies/ruby-1.9.3-p545/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, /Users/benrajalu/.rvm/rubies/ruby-1.9.3-p545/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, /Users/benrajalu/.rvm/rubies/ruby-1.9.3-p545/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, /Users/benrajalu/.rvm/rubies/ruby-1.9.3-p545/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, /Users/benrajalu/.rvm/rubies/ruby-1.9.3-p545/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, /Users/benrajalu/.rvm/rubies/ruby-1.9.3-p545/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, /Users/benrajalu/.rvm/rubies/ruby-1.9.3-p545/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+@font-face {
+  font-family: "gill-sans";
+  src: url("../fonts/gill-sans/gill-sans.eot");
+  src: url("../fonts/gill-sans/gill-sans.eot?#iefix") format('embedded-opentype'), url("../fonts/gill-sans/gill-sans.ttf") format('truetype'), url("../fonts/gill-sans/gill-sans.otf") format('opentype'), url("../fonts/gill-sans/gill-sans.svg") format('svg');
+  font-weight: "normal"; }
+@font-face {
+  font-family: "gill-sans-bold";
+  src: url("../fonts/gill-sans-bold/gill-sans-bold.eot");
+  src: url("../fonts/gill-sans-bold/gill-sans-bold.eot?#iefix") format('embedded-opentype'), url("../fonts/gill-sans-bold/gill-sans-bold.ttf") format('truetype'), url("../fonts/gill-sans-bold/gill-sans-bold.otf") format('opentype'), url("../fonts/gill-sans-bold/gill-sans-bold.svg") format('svg');
+  font-weight: "normal"; }
+@font-face {
+  font-family: "gill-sans-light";
+  src: url("../fonts/gill-sans-light/gill-sans-light.eot");
+  src: url("../fonts/gill-sans-light/gill-sans-light.eot?#iefix") format('embedded-opentype'), url("../fonts/gill-sans-light/gill-sans-light.ttf") format('truetype'), url("../fonts/gill-sans-light/gill-sans-light.otf") format('opentype'), url("../fonts/gill-sans-light/gill-sans-light.svg") format('svg');
+  font-weight: "normal"; }
+/* line 2, /Users/benrajalu/Dropbox/philRaj/source/css/_variables.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 20, /Users/benrajalu/Dropbox/philRaj/source/css/_mixins.scss */
+.cf {
+  *zoom: 1; }
+  /* line 2, /Users/benrajalu/Dropbox/philRaj/source/css/_mixins.scss */
+  .cf:before, .cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */ }
+  /* line 8, /Users/benrajalu/Dropbox/philRaj/source/css/_mixins.scss */
+  .cf:after {
+    clear: both; }
+
+/*
+ * jQuery FlexSlider v2.2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+/* Browser Resets
+*********************************/
+/* line 16, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus {
+  outline: none; }
+
+/* line 20, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/* Icon Fonts
+*********************************/
+/* Font-face Icons */
+/* FlexSlider Necessary Styles
+*********************************/
+/* line 30, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.flexslider {
+  margin: 0;
+  padding: 0; }
+
+/* line 31, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden; }
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+/* line 32, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.flexslider .slides img {
+  width: auto;
+  display: inline; }
+
+/* line 33, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.flex-pauseplay span {
+  text-transform: capitalize; }
+
+/* Clearfix for the .slides element */
+/* line 36, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.slides:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+/* line 37, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+html[xmlns] .slides {
+  display: block; }
+
+/* line 38, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+* html .slides {
+  height: 1%; }
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+/* line 43, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.no-js .slides > li:first-child {
+  display: block; }
+
+/* FlexSlider Default Theme
+*********************************/
+/* line 47, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.flexslider {
+  margin: 0 0 60px;
+  position: relative;
+  zoom: 1; }
+
+/* line 48, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.flex-viewport {
+  max-height: 2000px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+/* line 49, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.loading .flex-viewport {
+  max-height: 300px; }
+
+/* line 50, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.flexslider .slides {
+  zoom: 1; }
+
+/* line 51, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.carousel li {
+  margin-right: 5px; }
+
+/* Direction Nav */
+/* line 54, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.flex-direction-nav {
+  *height: 0; }
+
+/* line 55, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.flex-direction-nav a {
+  text-decoration: none;
+  text-indent: -9999px;
+  display: block;
+  width: 65px;
+  height: 65px;
+  margin: -32.5px 0 0;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  overflow: hidden;
+  opacity: 1;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease; }
+
+/* line 56, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.flex-direction-nav .flex-prev {
+  left: 30px;
+  background: url("../img/Verbatim/Btn_slideshow/btn_slideshow_verbatim_btn_slideshow_left_65x65.png") center center no-repeat; }
+
+/* line 57, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.flex-direction-nav .flex-next {
+  right: 30px;
+  text-align: right;
+  text-indent: 9999px;
+  background: url("../img/Verbatim/Btn_slideshow/btn_slideshow_verbatim_btn_slideshow_right_65x65.png") center center no-repeat; }
+
+/* line 58, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.flexslider:hover .flex-prev {
+  opacity: 1;
+  left: 25px; }
+
+/* line 59, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.flexslider:hover .flex-next {
+  opacity: 1;
+  right: 25px; }
+
+/* line 60, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
+  opacity: 1; }
+
+/* line 61, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.flex-direction-nav .flex-disabled {
+  opacity: 0 !important;
+  filter: alpha(opacity=0);
+  cursor: default; }
+
+/* Pause/Play */
+/* line 64, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.flex-pauseplay a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  opacity: 0.8;
+  z-index: 10;
+  overflow: hidden;
+  cursor: pointer;
+  color: #000; }
+
+/* line 65, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.flex-pauseplay a:before {
+  font-family: "flexslider-icon";
+  font-size: 20px;
+  display: inline-block;
+  content: '\f004'; }
+
+/* line 66, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.flex-pauseplay a:hover {
+  opacity: 1; }
+
+/* line 67, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.flex-pauseplay a.flex-play:before {
+  content: '\f003'; }
+
+/* Control Nav */
+/* line 70, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: -40px;
+  text-align: center; }
+
+/* line 71, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.flex-control-nav li {
+  margin: 0 6px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline; }
+
+/* line 72, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.flex-control-paging li a {
+  width: 11px;
+  height: 11px;
+  display: block;
+  background: #666;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  text-indent: -9999px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3); }
+
+/* line 73, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.flex-control-paging li a:hover {
+  background: #333;
+  background: rgba(0, 0, 0, 0.7); }
+
+/* line 74, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.flex-control-paging li a.flex-active {
+  background: #000;
+  background: rgba(0, 0, 0, 0.9);
+  cursor: default; }
+
+/* line 76, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.flex-control-thumbs {
+  margin: 5px 0 0;
+  position: static;
+  overflow: hidden; }
+
+/* line 77, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.flex-control-thumbs li {
+  width: 25%;
+  float: left;
+  margin: 0; }
+
+/* line 78, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.flex-control-thumbs img {
+  width: 100%;
+  display: block;
+  opacity: .7;
+  cursor: pointer; }
+
+/* line 79, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.flex-control-thumbs img:hover {
+  opacity: 1; }
+
+/* line 80, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+.flex-control-thumbs .flex-active {
+  opacity: 1;
+  cursor: default; }
+
+@media screen and (max-width: 860px) {
+  /* line 83, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+  .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 10px; }
+
+  /* line 84, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/plugins/_flexslider.scss */
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 10px; } }
+/* line 2, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+body {
+  border: 30px solid #435769; }
+  @media only screen and (max-width: 900px) {
+    /* line 2, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    body {
+      border: 5px solid #435769; } }
+
+/* line 12, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+.row {
+  *zoom: 1;
+  width: 100%;
+  position: relative;
+  margin: 0 auto; }
+  /* line 2, /Users/benrajalu/Dropbox/philRaj/source/css/_mixins.scss */
+  .row:before, .row:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */ }
+  /* line 8, /Users/benrajalu/Dropbox/philRaj/source/css/_mixins.scss */
+  .row:after {
+    clear: both; }
+  /* line 17, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .row.padding {
+    padding: 0 10px; }
+  /* line 20, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .row.table-large {
+    display: table; }
+    /* line 22, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .row.table-large > .columns {
+      display: table-cell;
+      vertical-align: middle;
+      float: none; }
+    @media all and (max-width: 1125px) {
+      /* line 20, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+      .row.table-large {
+        display: block; }
+        /* line 29, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+        .row.table-large > .columns {
+          display: block;
+          width: 100%; } }
+  /* line 35, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .row.table-medium {
+    display: table; }
+    /* line 37, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .row.table-medium .columns {
+      display: table-cell;
+      vertical-align: middle;
+      float: none; }
+    @media all and (max-width: 550px) {
+      /* line 35, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+      .row.table-medium {
+        display: block; }
+        /* line 44, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+        .row.table-medium .columns {
+          display: block; } }
+  /* line 49, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .row.table-small {
+    display: table; }
+    /* line 51, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .row.table-small .columns {
+      display: table-cell;
+      vertical-align: middle;
+      float: none; }
+  @media all and (max-width: 1125px) {
+    /* line 58, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .row.noPadMobile {
+      padding: 0px; }
+      /* line 60, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+      .row.noPadMobile .columns {
+        padding: 0px; }
+    /* line 66, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .row .columns.mediumPad {
+      padding: 0 10px; } }
+  @media all and (max-width: 550px) {
+    /* line 73, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .row .columns.mediumPad {
+      padding: 0px; } }
+
+/* line 80, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+.rowFluid {
+  width: 100%;
+  *zoom: 1;
+  position: relative; }
+  /* line 2, /Users/benrajalu/Dropbox/philRaj/source/css/_mixins.scss */
+  .rowFluid:before, .rowFluid:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */ }
+  /* line 8, /Users/benrajalu/Dropbox/philRaj/source/css/_mixins.scss */
+  .rowFluid:after {
+    clear: both; }
+
+/* line 87, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+.columns {
+  float: left;
+  display: block;
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  /* line 95, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.pad0 {
+    padding: 0px; }
+  /* line 98, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.padR {
+    padding-right: 10px; }
+  /* line 101, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.padL {
+    padding-left: 10px; }
+  /* line 106, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-1 {
+    width: 8.33333%; }
+  /* line 106, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-2 {
+    width: 16.66667%; }
+  /* line 106, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-3 {
+    width: 25%; }
+  /* line 106, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-4 {
+    width: 33.33333%; }
+  /* line 106, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-5 {
+    width: 41.66667%; }
+  /* line 106, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-6 {
+    width: 50%; }
+  /* line 106, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-7 {
+    width: 58.33333%; }
+  /* line 106, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-8 {
+    width: 66.66667%; }
+  /* line 106, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-9 {
+    width: 75%; }
+  /* line 106, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-10 {
+    width: 83.33333%; }
+  /* line 106, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-11 {
+    width: 91.66667%; }
+  /* line 106, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-12 {
+    width: 100%; }
+  /* line 112, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-1 {
+    width: 8.33333%; }
+  /* line 112, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-2 {
+    width: 16.66667%; }
+  /* line 112, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-3 {
+    width: 25%; }
+  /* line 112, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-4 {
+    width: 33.33333%; }
+  /* line 112, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-5 {
+    width: 41.66667%; }
+  /* line 112, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-6 {
+    width: 50%; }
+  /* line 112, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-7 {
+    width: 58.33333%; }
+  /* line 112, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-8 {
+    width: 66.66667%; }
+  /* line 112, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-9 {
+    width: 75%; }
+  /* line 112, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-10 {
+    width: 83.33333%; }
+  /* line 112, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-11 {
+    width: 91.66667%; }
+  /* line 112, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-12 {
+    width: 100%; }
+  /* line 118, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-1 {
+    width: 8.33333%; }
+  /* line 118, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-2 {
+    width: 16.66667%; }
+  /* line 118, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-3 {
+    width: 25%; }
+  /* line 118, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-4 {
+    width: 33.33333%; }
+  /* line 118, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-5 {
+    width: 41.66667%; }
+  /* line 118, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-6 {
+    width: 50%; }
+  /* line 118, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-7 {
+    width: 58.33333%; }
+  /* line 118, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-8 {
+    width: 66.66667%; }
+  /* line 118, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-9 {
+    width: 75%; }
+  /* line 118, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-10 {
+    width: 83.33333%; }
+  /* line 118, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-11 {
+    width: 91.66667%; }
+  /* line 118, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-12 {
+    width: 100%; }
+  /* line 124, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-pull-1 {
+    position: relative;
+    left: -8.33333%; }
+  /* line 124, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-pull-2 {
+    position: relative;
+    left: -16.66667%; }
+  /* line 124, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-pull-3 {
+    position: relative;
+    left: -25%; }
+  /* line 124, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-pull-4 {
+    position: relative;
+    left: -33.33333%; }
+  /* line 124, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-pull-5 {
+    position: relative;
+    left: -41.66667%; }
+  /* line 124, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-pull-6 {
+    position: relative;
+    left: -50%; }
+  /* line 124, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-pull-7 {
+    position: relative;
+    left: -58.33333%; }
+  /* line 124, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-pull-8 {
+    position: relative;
+    left: -66.66667%; }
+  /* line 124, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-pull-9 {
+    position: relative;
+    left: -75%; }
+  /* line 124, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-pull-10 {
+    position: relative;
+    left: -83.33333%; }
+  /* line 124, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-pull-11 {
+    position: relative;
+    left: -91.66667%; }
+  /* line 124, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-pull-12 {
+    position: relative;
+    left: -100%; }
+  /* line 130, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-push-1 {
+    position: relative;
+    left: 8.33333%; }
+  /* line 130, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-push-2 {
+    position: relative;
+    left: 16.66667%; }
+  /* line 130, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-push-3 {
+    position: relative;
+    left: 25%; }
+  /* line 130, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-push-4 {
+    position: relative;
+    left: 33.33333%; }
+  /* line 130, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-push-5 {
+    position: relative;
+    left: 41.66667%; }
+  /* line 130, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-push-6 {
+    position: relative;
+    left: 50%; }
+  /* line 130, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-push-7 {
+    position: relative;
+    left: 58.33333%; }
+  /* line 130, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-push-8 {
+    position: relative;
+    left: 66.66667%; }
+  /* line 130, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-push-9 {
+    position: relative;
+    left: 75%; }
+  /* line 130, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-push-10 {
+    position: relative;
+    left: 83.33333%; }
+  /* line 130, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-push-11 {
+    position: relative;
+    left: 91.66667%; }
+  /* line 130, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.large-push-12 {
+    position: relative;
+    left: 100%; }
+  /* line 136, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-pull-1 {
+    position: relative;
+    left: -8.33333%; }
+  /* line 136, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-pull-2 {
+    position: relative;
+    left: -16.66667%; }
+  /* line 136, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-pull-3 {
+    position: relative;
+    left: -25%; }
+  /* line 136, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-pull-4 {
+    position: relative;
+    left: -33.33333%; }
+  /* line 136, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-pull-5 {
+    position: relative;
+    left: -41.66667%; }
+  /* line 136, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-pull-6 {
+    position: relative;
+    left: -50%; }
+  /* line 136, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-pull-7 {
+    position: relative;
+    left: -58.33333%; }
+  /* line 136, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-pull-8 {
+    position: relative;
+    left: -66.66667%; }
+  /* line 136, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-pull-9 {
+    position: relative;
+    left: -75%; }
+  /* line 136, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-pull-10 {
+    position: relative;
+    left: -83.33333%; }
+  /* line 136, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-pull-11 {
+    position: relative;
+    left: -91.66667%; }
+  /* line 136, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-pull-12 {
+    position: relative;
+    left: -100%; }
+  /* line 142, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-push-1 {
+    position: relative;
+    left: 8.33333%; }
+  /* line 142, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-push-2 {
+    position: relative;
+    left: 16.66667%; }
+  /* line 142, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-push-3 {
+    position: relative;
+    left: 25%; }
+  /* line 142, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-push-4 {
+    position: relative;
+    left: 33.33333%; }
+  /* line 142, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-push-5 {
+    position: relative;
+    left: 41.66667%; }
+  /* line 142, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-push-6 {
+    position: relative;
+    left: 50%; }
+  /* line 142, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-push-7 {
+    position: relative;
+    left: 58.33333%; }
+  /* line 142, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-push-8 {
+    position: relative;
+    left: 66.66667%; }
+  /* line 142, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-push-9 {
+    position: relative;
+    left: 75%; }
+  /* line 142, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-push-10 {
+    position: relative;
+    left: 83.33333%; }
+  /* line 142, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-push-11 {
+    position: relative;
+    left: 91.66667%; }
+  /* line 142, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.medium-push-12 {
+    position: relative;
+    left: 100%; }
+  /* line 148, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-pull-1 {
+    position: relative;
+    left: -8.33333%; }
+  /* line 148, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-pull-2 {
+    position: relative;
+    left: -16.66667%; }
+  /* line 148, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-pull-3 {
+    position: relative;
+    left: -25%; }
+  /* line 148, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-pull-4 {
+    position: relative;
+    left: -33.33333%; }
+  /* line 148, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-pull-5 {
+    position: relative;
+    left: -41.66667%; }
+  /* line 148, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-pull-6 {
+    position: relative;
+    left: -50%; }
+  /* line 148, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-pull-7 {
+    position: relative;
+    left: -58.33333%; }
+  /* line 148, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-pull-8 {
+    position: relative;
+    left: -66.66667%; }
+  /* line 148, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-pull-9 {
+    position: relative;
+    left: -75%; }
+  /* line 148, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-pull-10 {
+    position: relative;
+    left: -83.33333%; }
+  /* line 148, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-pull-11 {
+    position: relative;
+    left: -91.66667%; }
+  /* line 148, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-pull-12 {
+    position: relative;
+    left: -100%; }
+  /* line 154, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-push-1 {
+    position: relative;
+    left: 8.33333%; }
+  /* line 154, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-push-2 {
+    position: relative;
+    left: 16.66667%; }
+  /* line 154, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-push-3 {
+    position: relative;
+    left: 25%; }
+  /* line 154, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-push-4 {
+    position: relative;
+    left: 33.33333%; }
+  /* line 154, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-push-5 {
+    position: relative;
+    left: 41.66667%; }
+  /* line 154, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-push-6 {
+    position: relative;
+    left: 50%; }
+  /* line 154, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-push-7 {
+    position: relative;
+    left: 58.33333%; }
+  /* line 154, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-push-8 {
+    position: relative;
+    left: 66.66667%; }
+  /* line 154, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-push-9 {
+    position: relative;
+    left: 75%; }
+  /* line 154, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-push-10 {
+    position: relative;
+    left: 83.33333%; }
+  /* line 154, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-push-11 {
+    position: relative;
+    left: 91.66667%; }
+  /* line 154, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.small-push-12 {
+    position: relative;
+    left: 100%; }
+  /* line 160, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+  .columns.centered {
+    float: none !important;
+    margin: 0 auto;
+    position: relative; }
+  @media all and (max-width: 1125px) {
+    /* line 168, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns[class^=large-] {
+      width: 100%;
+      padding: 0px; }
+    /* line 173, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.large-pull-1 {
+      position: static;
+      left: auto; }
+    /* line 173, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.large-pull-2 {
+      position: static;
+      left: auto; }
+    /* line 173, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.large-pull-3 {
+      position: static;
+      left: auto; }
+    /* line 173, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.large-pull-4 {
+      position: static;
+      left: auto; }
+    /* line 173, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.large-pull-5 {
+      position: static;
+      left: auto; }
+    /* line 173, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.large-pull-6 {
+      position: static;
+      left: auto; }
+    /* line 173, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.large-pull-7 {
+      position: static;
+      left: auto; }
+    /* line 173, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.large-pull-8 {
+      position: static;
+      left: auto; }
+    /* line 173, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.large-pull-9 {
+      position: static;
+      left: auto; }
+    /* line 173, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.large-pull-10 {
+      position: static;
+      left: auto; }
+    /* line 173, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.large-pull-11 {
+      position: static;
+      left: auto; }
+    /* line 173, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.large-pull-12 {
+      position: static;
+      left: auto; }
+    /* line 179, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.large-push-1 {
+      position: static;
+      left: auto; }
+    /* line 179, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.large-push-2 {
+      position: static;
+      left: auto; }
+    /* line 179, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.large-push-3 {
+      position: static;
+      left: auto; }
+    /* line 179, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.large-push-4 {
+      position: static;
+      left: auto; }
+    /* line 179, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.large-push-5 {
+      position: static;
+      left: auto; }
+    /* line 179, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.large-push-6 {
+      position: static;
+      left: auto; }
+    /* line 179, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.large-push-7 {
+      position: static;
+      left: auto; }
+    /* line 179, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.large-push-8 {
+      position: static;
+      left: auto; }
+    /* line 179, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.large-push-9 {
+      position: static;
+      left: auto; }
+    /* line 179, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.large-push-10 {
+      position: static;
+      left: auto; }
+    /* line 179, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.large-push-11 {
+      position: static;
+      left: auto; }
+    /* line 179, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.large-push-12 {
+      position: static;
+      left: auto; }
+    /* line 185, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.small-1 {
+      width: 8.33333%; }
+    /* line 185, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.small-2 {
+      width: 16.66667%; }
+    /* line 185, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.small-3 {
+      width: 25%; }
+    /* line 185, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.small-4 {
+      width: 33.33333%; }
+    /* line 185, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.small-5 {
+      width: 41.66667%; }
+    /* line 185, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.small-6 {
+      width: 50%; }
+    /* line 185, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.small-7 {
+      width: 58.33333%; }
+    /* line 185, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.small-8 {
+      width: 66.66667%; }
+    /* line 185, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.small-9 {
+      width: 75%; }
+    /* line 185, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.small-10 {
+      width: 83.33333%; }
+    /* line 185, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.small-11 {
+      width: 91.66667%; }
+    /* line 185, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.small-12 {
+      width: 100%; }
+    /* line 191, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-1 {
+      padding: 0 10px;
+      width: 8.33333%; }
+    /* line 191, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-2 {
+      padding: 0 10px;
+      width: 16.66667%; }
+    /* line 191, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-3 {
+      padding: 0 10px;
+      width: 25%; }
+    /* line 191, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-4 {
+      padding: 0 10px;
+      width: 33.33333%; }
+    /* line 191, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-5 {
+      padding: 0 10px;
+      width: 41.66667%; }
+    /* line 191, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-6 {
+      padding: 0 10px;
+      width: 50%; }
+    /* line 191, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-7 {
+      padding: 0 10px;
+      width: 58.33333%; }
+    /* line 191, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-8 {
+      padding: 0 10px;
+      width: 66.66667%; }
+    /* line 191, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-9 {
+      padding: 0 10px;
+      width: 75%; }
+    /* line 191, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-10 {
+      padding: 0 10px;
+      width: 83.33333%; }
+    /* line 191, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-11 {
+      padding: 0 10px;
+      width: 91.66667%; }
+    /* line 191, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-12 {
+      padding: 0 10px;
+      width: 100%; } }
+  @media all and (max-width: 550px) {
+    /* line 199, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns[class^=large-] {
+      width: 100%;
+      padding: 0px; }
+    /* line 204, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns[class^=medium-] {
+      width: 100%;
+      padding: 0px; }
+    /* line 210, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-pull-1 {
+      position: static;
+      left: auto; }
+    /* line 210, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-pull-2 {
+      position: static;
+      left: auto; }
+    /* line 210, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-pull-3 {
+      position: static;
+      left: auto; }
+    /* line 210, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-pull-4 {
+      position: static;
+      left: auto; }
+    /* line 210, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-pull-5 {
+      position: static;
+      left: auto; }
+    /* line 210, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-pull-6 {
+      position: static;
+      left: auto; }
+    /* line 210, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-pull-7 {
+      position: static;
+      left: auto; }
+    /* line 210, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-pull-8 {
+      position: static;
+      left: auto; }
+    /* line 210, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-pull-9 {
+      position: static;
+      left: auto; }
+    /* line 210, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-pull-10 {
+      position: static;
+      left: auto; }
+    /* line 210, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-pull-11 {
+      position: static;
+      left: auto; }
+    /* line 210, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-pull-12 {
+      position: static;
+      left: auto; }
+    /* line 216, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-push-1 {
+      position: static;
+      left: auto; }
+    /* line 216, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-push-2 {
+      position: static;
+      left: auto; }
+    /* line 216, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-push-3 {
+      position: static;
+      left: auto; }
+    /* line 216, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-push-4 {
+      position: static;
+      left: auto; }
+    /* line 216, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-push-5 {
+      position: static;
+      left: auto; }
+    /* line 216, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-push-6 {
+      position: static;
+      left: auto; }
+    /* line 216, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-push-7 {
+      position: static;
+      left: auto; }
+    /* line 216, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-push-8 {
+      position: static;
+      left: auto; }
+    /* line 216, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-push-9 {
+      position: static;
+      left: auto; }
+    /* line 216, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-push-10 {
+      position: static;
+      left: auto; }
+    /* line 216, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-push-11 {
+      position: static;
+      left: auto; }
+    /* line 216, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.medium-push-12 {
+      position: static;
+      left: auto; }
+    /* line 222, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.small-1 {
+      width: 8.33333%; }
+    /* line 222, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.small-2 {
+      width: 16.66667%; }
+    /* line 222, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.small-3 {
+      width: 25%; }
+    /* line 222, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.small-4 {
+      width: 33.33333%; }
+    /* line 222, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.small-5 {
+      width: 41.66667%; }
+    /* line 222, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.small-6 {
+      width: 50%; }
+    /* line 222, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.small-7 {
+      width: 58.33333%; }
+    /* line 222, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.small-8 {
+      width: 66.66667%; }
+    /* line 222, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.small-9 {
+      width: 75%; }
+    /* line 222, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.small-10 {
+      width: 83.33333%; }
+    /* line 222, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.small-11 {
+      width: 91.66667%; }
+    /* line 222, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_structure.scss */
+    .columns.small-12 {
+      width: 100%; } }
+
+/* line 1, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_all.scss */
+.button {
+  display: inline-block;
+  background: #43e58f;
+  font-size: 20px;
+  color: #fff;
+  font-family: 'gill-sans';
+  padding: 8px 15px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  -moz-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out; }
+  /* line 9, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_all.scss */
+  .button:hover {
+    background: #fff;
+    color: #435769; }
+
+/* line 1, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+#mainNav {
+  padding: 30px 40px 0px;
+  display: block;
+  line-height: 120px; }
+  /* line 5, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+  #mainNav #toggleMenu {
+    display: none; }
+  /* line 8, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+  #mainNav > a {
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle; }
+    /* line 12, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+    #mainNav > a img {
+      display: block;
+      position: relative;
+      top: -10px; }
+  /* line 18, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+  #mainNav > ul {
+    display: block;
+    float: right;
+    line-height: 120px;
+    position: relative; }
+    /* line 23, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+    #mainNav > ul li {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+      margin-left: 40px; }
+      /* line 28, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+      #mainNav > ul li a {
+        font-size: 24px;
+        color: #435769;
+        font-family: 'gill-sans';
+        text-decoration: none;
+        -moz-transition: all 200ms ease-out;
+        -o-transition: all 200ms ease-out;
+        -webkit-transition: all 200ms ease-out;
+        transition: all 200ms ease-out; }
+        /* line 32, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+        #mainNav > ul li a:hover {
+          color: #43e58f; }
+        /* line 35, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+        #mainNav > ul li a.popTrigger {
+          background: #43e58f;
+          padding: 5px 15px;
+          -moz-border-radius: 20px;
+          -webkit-border-radius: 20px;
+          border-radius: 20px;
+          color: #fff; }
+          /* line 40, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+          #mainNav > ul li a.popTrigger:hover {
+            background: #435769; }
+    /* line 47, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+    #mainNav > ul .activeMark {
+      opacity: 0;
+      height: 2px;
+      width: 100px;
+      background: #43e58f;
+      display: block;
+      position: absolute;
+      left: 0px;
+      bottom: 30px;
+      -moz-transition: all 200ms ease-out;
+      -o-transition: all 200ms ease-out;
+      -webkit-transition: all 200ms ease-out;
+      transition: all 200ms ease-out;
+      margin-left: 0px; }
+  @media only screen and (max-width: 1125px) {
+    /* line 1, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+    #mainNav {
+      line-height: 70px; }
+      /* line 63, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+      #mainNav > a img {
+        width: 140px; }
+      /* line 66, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+      #mainNav > ul {
+        line-height: 70px; }
+        /* line 69, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+        #mainNav > ul li a {
+          font-size: 20px; }
+        /* line 73, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+        #mainNav > ul .activeMark {
+          bottom: 15px; } }
+  @media only screen and (max-width: 935px) {
+    /* line 1, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+    #mainNav {
+      line-height: auto;
+      padding: 15px; }
+      /* line 82, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+      #mainNav > ul .activeMark {
+        display: none; }
+      /* line 85, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+      #mainNav > ul {
+        margin-left: -30px; }
+        /* line 87, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+        #mainNav > ul li {
+          margin-left: 30px; }
+          /* line 89, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+          #mainNav > ul li .active {
+            border-bottom: 2px solid #43e58f; }
+      /* line 94, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+      #mainNav > a {
+        margin: 0 auto 20px;
+        display: block;
+        text-align: center; }
+      /* line 99, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+      #mainNav > a img {
+        width: 140px;
+        display: inline-block; }
+      /* line 103, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+      #mainNav > ul {
+        line-height: 70px;
+        float: none;
+        text-align: center; }
+        /* line 108, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+        #mainNav > ul li a {
+          font-size: 20px; }
+        /* line 112, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+        #mainNav > ul .activeMark {
+          bottom: 15px; } }
+  @media only screen and (max-width: 620px) {
+    /* line 119, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+    #mainNav > a {
+      display: inline; }
+      /* line 121, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+      #mainNav > a img {
+        margin: 0px;
+        top: 0px; }
+    /* line 126, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+    #mainNav > ul {
+      position: fixed;
+      background: #435769;
+      z-index: 98;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: -100%;
+      margin-left: 0px;
+      padding-top: 15%;
+      -moz-transition: all 200ms ease-out;
+      -o-transition: all 200ms ease-out;
+      -webkit-transition: all 200ms ease-out;
+      transition: all 200ms ease-out; }
+      /* line 137, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+      #mainNav > ul li {
+        display: block;
+        text-align: center;
+        margin: 0 0 20px 0;
+        line-height: 50px; }
+        /* line 142, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+        #mainNav > ul li a {
+          color: white; }
+      /* line 146, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+      #mainNav > ul.show {
+        display: block;
+        left: 0px; }
+    /* line 151, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+    #mainNav #toggleMenu {
+      display: block;
+      position: absolute;
+      top: 24px;
+      right: 15px;
+      z-index: 99;
+      width: 60px;
+      height: 60px;
+      -moz-border-radius: 100%;
+      -webkit-border-radius: 100%;
+      border-radius: 100%;
+      border: 0px;
+      background: #43e58f;
+      padding: 0px;
+      line-height: 60px;
+      cursor: pointer; }
+      /* line 165, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+      #mainNav #toggleMenu:active, #mainNav #toggleMenu:focus {
+        outline: 0; }
+      /* line 168, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+      #mainNav #toggleMenu i {
+        display: inline-block;
+        width: 35px;
+        height: 4px;
+        background: #fff;
+        text-indent: -999px;
+        vertical-align: middle;
+        position: relative;
+        top: -1px;
+        -moz-transition: all 200ms ease-out;
+        -o-transition: all 200ms ease-out;
+        -webkit-transition: all 200ms ease-out;
+        transition: all 200ms ease-out; }
+        /* line 178, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+        #mainNav #toggleMenu i:after, #mainNav #toggleMenu i:before {
+          -moz-transition: all 200ms ease-out;
+          -o-transition: all 200ms ease-out;
+          -webkit-transition: all 200ms ease-out;
+          transition: all 200ms ease-out;
+          content: "";
+          display: inline-block;
+          width: 35px;
+          height: 4px;
+          background: #fff;
+          position: absolute;
+          left: 0px; }
+        /* line 188, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+        #mainNav #toggleMenu i:after {
+          top: -10px; }
+        /* line 191, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+        #mainNav #toggleMenu i:before {
+          bottom: -10px; }
+      /* line 195, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+      #mainNav #toggleMenu.active {
+        background: #435769;
+        position: fixed; }
+        /* line 198, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+        #mainNav #toggleMenu.active i {
+          background: #435769; }
+          /* line 200, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+          #mainNav #toggleMenu.active i:after {
+            -moz-transform: rotate(45deg) translateY(7px) translateX(8px);
+            -ms-transform: rotate(45deg) translateY(7px) translateX(8px);
+            -webkit-transform: rotate(45deg) translateY(7px) translateX(8px);
+            transform: rotate(45deg) translateY(7px) translateX(8px); }
+          /* line 203, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_mainNav.scss */
+          #mainNav #toggleMenu.active i:before {
+            -moz-transform: rotate(-45deg) translateY(-7px) translateX(8px);
+            -ms-transform: rotate(-45deg) translateY(-7px) translateX(8px);
+            -webkit-transform: rotate(-45deg) translateY(-7px) translateX(8px);
+            transform: rotate(-45deg) translateY(-7px) translateX(8px); } }
+
+/* line 1, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_footer.scss */
+#footer {
+  padding: 0 40px;
+  text-align: right;
+  margin-bottom: 30px; }
+
+/* line 1, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+#contents {
+  padding: 30px; }
+  /* line 4, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+  #contents #intro {
+    background: #435769;
+    margin: 0px 0px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+    padding: 0 10px; }
+    /* line 11, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+    #contents #intro .bg {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      top: 0px;
+      left: 0px;
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
+      opacity: 0.1; }
+    /* line 21, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+    #contents #intro .contents {
+      position: relative;
+      z-index: 2;
+      vertical-align: middle;
+      padding: 100px 0px;
+      margin: 0 auto; }
+      /* line 27, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+      #contents #intro .contents h1 {
+        font-size: 40px;
+        color: #fff;
+        font-family: 'gill-sans-light';
+        margin-bottom: 20px; }
+      /* line 31, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+      #contents #intro .contents p {
+        max-width: 600px;
+        margin: 0 auto 20px;
+        font-size: 20px;
+        color: #fff;
+        font-family: 'gill-sans-light';
+        line-height: 1.6; }
+      @media only screen and (max-width: 935px) {
+        /* line 21, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+        #contents #intro .contents {
+          padding: 40px; }
+          /* line 40, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+          #contents #intro .contents h1 {
+            font-size: 30px; }
+          /* line 43, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+          #contents #intro .contents p {
+            font-size: 16px; } }
+  /* line 50, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+  #contents article.tableBlock {
+    display: table;
+    width: 100%;
+    background: #435769; }
+    /* line 54, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+    #contents article.tableBlock img, #contents article.tableBlock .contents {
+      display: table-cell;
+      vertical-align: middle; }
+    /* line 58, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+    #contents article.tableBlock .contents {
+      padding: 0 20px;
+      text-align: center;
+      position: relative; }
+      /* line 62, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+      #contents article.tableBlock .contents h2, #contents article.tableBlock .contents p, #contents article.tableBlock .contents .button, #contents article.tableBlock .contents hr {
+        position: relative;
+        z-index: 2; }
+      /* line 66, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+      #contents article.tableBlock .contents h2 {
+        font-size: 25px;
+        color: #fff;
+        font-family: 'gill-sans-light';
+        margin-bottom: 20px; }
+      /* line 70, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+      #contents article.tableBlock .contents hr {
+        max-width: 215px;
+        margin: 0 auto 20px;
+        border: 0px;
+        border-top: 1px solid #43e58f; }
+      /* line 76, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+      #contents article.tableBlock .contents p {
+        font-size: 16px;
+        color: #fff;
+        font-family: 'gill-sans-light';
+        line-height: 1.4;
+        max-width: 500px;
+        margin: 0 auto 20px; }
+      /* line 82, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+      #contents article.tableBlock .contents:after {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 1;
+        width: 50%;
+        height: 100%;
+        background: #435769;
+        left: -28px;
+        top: 0px;
+        -moz-transform: skew(-4deg);
+        -ms-transform: skew(-4deg);
+        -webkit-transform: skew(-4deg);
+        transform: skew(-4deg); }
+    /* line 96, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+    #contents article.tableBlock.greyBG {
+      background: #eeeeee; }
+      /* line 98, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+      #contents article.tableBlock.greyBG h2, #contents article.tableBlock.greyBG p {
+        color: #435769; }
+      /* line 102, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+      #contents article.tableBlock.greyBG .contents:after {
+        background: #eeeeee; }
+    @media only screen and (max-width: 1125px) {
+      /* line 50, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+      #contents article.tableBlock {
+        display: table;
+        margin-bottom: 30px; } }
+    @media only screen and (max-width: 620px) {
+      /* line 114, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+      #contents article.tableBlock img {
+        display: none; }
+      /* line 117, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+      #contents article.tableBlock .contents {
+        padding: 20px; }
+        /* line 119, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+        #contents article.tableBlock .contents:after {
+          display: none; } }
+  /* line 126, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+  #contents #blogTeaser {
+    margin: 30px auto 0px; }
+    /* line 128, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+    #contents #blogTeaser .blueBG {
+      background: #435769;
+      text-align: center;
+      padding: 50px;
+      position: relative; }
+      /* line 133, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+      #contents #blogTeaser .blueBG h2 {
+        font-size: 25px;
+        color: #fff;
+        font-family: 'gill-sans-light';
+        margin-bottom: 20px; }
+      /* line 137, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+      #contents #blogTeaser .blueBG hr {
+        max-width: 215px;
+        margin: 0 auto 20px;
+        border: 0px;
+        border-top: 1px solid #43e58f; }
+      /* line 143, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+      #contents #blogTeaser .blueBG p {
+        font-size: 16px;
+        color: #fff;
+        font-family: 'gill-sans-light';
+        line-height: 1.4;
+        max-width: 500px;
+        margin: 0 auto 20px; }
+      /* line 149, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+      #contents #blogTeaser .blueBG:after {
+        content: "";
+        display: block;
+        width: 19px;
+        height: 36px;
+        background: url("../img/arrow.png") center center no-repeat;
+        position: absolute;
+        top: 50%;
+        margin-top: -15px;
+        right: -19px; }
+        @media only screen and (max-width: 1125px) {
+          /* line 149, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+          #contents #blogTeaser .blueBG:after {
+            -moz-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+            top: auto;
+            bottom: -26px;
+            left: 50%;
+            margin: 0px 0px 0px -10px; } }
+    /* line 168, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+    #contents #blogTeaser .greyBG {
+      background: #eeeeee;
+      padding: 0 50px; }
+      /* line 171, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+      #contents #blogTeaser .greyBG a {
+        text-decoration: none;
+        display: block; }
+        /* line 175, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+        #contents #blogTeaser .greyBG a:hover .meta li span {
+          text-decoration: underline; }
+      /* line 180, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+      #contents #blogTeaser .greyBG strong {
+        font-size: 15px;
+        color: #435769;
+        font-family: 'gill-sans';
+        text-transform: uppercase; }
+      /* line 184, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+      #contents #blogTeaser .greyBG h3 {
+        font-size: 30px;
+        color: #435769;
+        font-family: 'gill-sans-light';
+        margin-bottom: 10px; }
+      /* line 188, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+      #contents #blogTeaser .greyBG p {
+        margin-bottom: 15px;
+        font-size: 16px;
+        color: #454545;
+        font-family: 'gill-sans-light';
+        line-height: 1.1; }
+      /* line 194, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+      #contents #blogTeaser .greyBG .meta li {
+        display: inline-block;
+        font-size: 16px;
+        color: #435769;
+        font-family: 'gill-sans'; }
+        /* line 197, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+        #contents #blogTeaser .greyBG .meta li span {
+          color: #43e58f; }
+      @media only screen and (max-width: 1125px) {
+        /* line 168, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+        #contents #blogTeaser .greyBG {
+          padding: 30px 30px 40px; } }
+  @media only screen and (max-width: 620px) {
+    /* line 1, /Users/benrajalu/Dropbox/philRaj/source/css/_parts/_index.scss */
+    #contents {
+      padding: 0px 0px 20px 0px; } }
