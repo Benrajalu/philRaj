@@ -1,0 +1,18 @@
+@import "compass/reset";
+@import "compass/css3";
+
+// Mixins
+@import "fonts";
+@import "variables";
+@import "mixins";
+
+// Plugins
+@import "_parts/plugins/flexslider";
+
+// Parts
+@import "_parts/structure";
+@import "_parts/all";
+@import "_parts/mainNav";
+@import "_parts/footer";
+@import "_parts/index";
+

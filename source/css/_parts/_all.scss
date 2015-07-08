@@ -1,0 +1,13 @@
+.button{
+	display:inline-block;
+	background:$green;
+	@include gill(regular, 20px, $white);
+	padding:8px 15px;
+	@include border-radius(10px);
+	text-decoration:none;
+	@include transition(all 200ms ease-out);
+	&:hover{
+		background:$white;
+		color:$blue
+	}
+}
