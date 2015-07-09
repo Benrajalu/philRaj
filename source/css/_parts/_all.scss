@@ -50,6 +50,90 @@
 	}
 }
 
+.biColor{
+	margin:0px auto 30px;
+	.blueBG{
+		background:$blue;
+		text-align:center;
+		padding:60px;
+		position:relative;
+		h2{
+			@include gill(light, 25px, $white);
+			margin-bottom:20px;
+		}
+		hr{
+			max-width:215px;
+			margin:0 auto 0px;
+			border:0px;
+			border-top:1px solid $green;
+		}
+	}
+	.greyBG{
+		background:$lightGrey;
+		padding:0 60px;
+		text-align: center;
+		p{
+			margin-bottom:15px;
+			@include gill(light, 20px, #454545);
+			line-height: 1.3;
+			max-width:500px;
+			margin:0 auto;
+		}
+		
+		@media only screen and (max-width: 1125px){
+			padding:30px 30px 40px;
+		}
+	}
+
+	.wysiwyg{
+		text-align:left;
+		padding-top:15px;
+		padding-bottom:15px;
+		p{
+			max-width:100%;
+		}
+	}
+}
+
+.wysiwyg{
+	text-align:left;
+	p, ul, ol, blockquote{
+		margin-bottom:20px !important;
+		&:last-child{
+			margin-bottom:0px !important;
+		}
+	}
+	ul{
+		list-style-position: outside;
+		list-style-type: disc;
+		padding-left:15px;
+		li{
+			@include gill(light, 18px, #454545);
+			margin-bottom:10px;
+		}
+	}
+
+	h2{
+		@include gill(regular, 27px, $blue);
+		margin-bottom:20px;
+	}
+	h3{
+		@include gill(regular, 23px, $blue);
+		margin-bottom:20px;
+	}
+	h4, h5, h6{
+		@include gill(regular, 18px, #454545);
+		text-transform: uppercase;
+		margin-bottom:20px;
+	}
+	a{
+		color:$blue;
+		&:hover{
+			color:$green;
+		}
+	}
+}
+
 /* overlay at start */
 .mfp-fade.mfp-bg {
   @include opacity(0);

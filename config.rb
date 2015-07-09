@@ -108,8 +108,8 @@ helpers do
     # <%= magic_link_to 'Home', '/index.html' %>
     def magic_link_to(link, url, opts={})
         current_url = current_resource.url
-        if current_url == "/" + url || current_url == "/" + url_for(url)
-            opts[:class] = "active"
+        if current_url == "/" + url || current_url == "/" + url_for(url) || current_url == "/"
+            opts[:class] = "active bite"
         end
         link_to(link, url, opts)
     end

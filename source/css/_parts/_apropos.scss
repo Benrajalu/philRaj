@@ -1,0 +1,92 @@
+#references{
+	text-align:center;
+	padding:0 10px;
+
+	h3{
+		@include gill(light, 25px, $blue);
+		margin-bottom:5px;
+	}
+	h4{
+		@include gill(light, 17px, $blue);
+		margin-bottom:20px;
+	}
+	hr{
+		max-width:215px;
+		margin:0 auto 10px;
+		border:0px;
+		border-top:1px solid $green;
+	}
+
+	#logoList{
+		margin:80px auto 60px;
+		img{
+			display:inline-block;
+			margin:0px 10px 20px;
+			max-width:90%;
+		}
+	}
+}
+
+#caseStudies{
+	text-align:justify;
+	padding:0 10px;
+	&:after{
+		content:"";
+		width:33%;
+		display:inline-block;
+		height:1px;
+	}
+	.teaser{
+		display:inline-block;
+		border:1px solid $lightGrey;
+		width:33%;
+		padding:15px;
+		position:relative;
+		margin-bottom:10px;
+		text-align: left;
+		a{
+			text-decoration: none;
+			display:block;
+			&:hover{
+				.button{
+					color:$white;
+					background:$green;
+				}
+			}
+		}
+		img{
+			width:100%;
+			display:block;
+			margin-bottom:15px;
+		}
+		p.data{
+			@include gill(light, 16px, $blue);
+			margin-bottom: 5px;
+		}
+		h3{
+			@include gill(regular, 29px, $blue);
+			margin-bottom: 10px;
+		}
+		p{
+			@include gill(light, 16px, $greyText);
+			margin-bottom:15px;
+		}
+		.button{
+			background:$white;
+			border:1px solid $green;
+			color:$green;
+		}
+	}
+
+	@media only screen and (max-width:1100px){
+		.teaser{
+			width:49%;
+		}
+	}
+
+	@media only screen and (max-width:500px){
+		.teaser{
+			width:100%;
+		}
+	}
+}
