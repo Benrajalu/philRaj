@@ -19,7 +19,7 @@
 			position:relative;
 			z-index:2;
 			vertical-align: middle;
-			padding:70px 0px;
+			padding:100px 0px;
 			margin:0 auto;
 			h1{
 				@include gill(light, 40px, $white);
@@ -30,6 +30,12 @@
 				margin:0 auto 20px;
 				@include gill(light, 20px, $white);
 				line-height: 1.6;
+				&.noPadding{
+					margin-bottom:0px;
+				}
+				&.data{
+					@include gill(light, 18px, $green);
+				}
 			}
 
 			@media only screen and (max-width: 935px){
@@ -39,6 +45,25 @@
 				}
 				p{
 					font-size:16px;
+				}
+			}
+		}
+
+		&.smaller{
+			.contents{
+				padding:70px 0px;
+			}
+		}
+
+		&.white{
+			background:$white;
+			.contents{
+				h1, p{
+					color:$blue;
+					&.data{
+						@include gill(light, 18px, $green);
+						margin-bottom:0px;
+					}
 				}
 			}
 		}
