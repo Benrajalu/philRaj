@@ -11,3 +11,71 @@
 		color:$blue
 	}
 }
+
+.popUp{
+	background:$white;
+	max-width:700px;
+	margin:0 auto;
+	padding:40px;
+	border:5px solid $blue;
+	position:relative;
+	text-align:center;
+	@include transition(all 200ms ease-out);
+	@include transform(translateY(0px));
+	&.mfp-hide{
+		@include transform(translateY(-30px));
+	}
+	h3{
+		@include gill(light, 25px, $blue);
+		margin-bottom:20px;
+	}
+	hr{
+		max-width:215px;
+		margin:0 auto 20px;
+		border:0px;
+		border-top:1px solid $green;
+	}
+	p{
+		@include gill(light, 16px, $blue);
+		line-height: 1.4;
+		max-width:500px;
+		margin:0 auto 20px;
+		strong{
+			text-transform: uppercase;
+			@include gill(bold, 16px, $blue);
+		}
+	}
+	.button{
+		margin-bottom: 20px;
+	}
+}
+
+/* overlay at start */
+.mfp-fade.mfp-bg {
+  @include opacity(0);
+  @include transition(all 0.15s ease-out);
+}
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  @include opacity(0.8);
+}
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  @include opacity(0);
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  @include opacity(0);
+  @include transition(all 0.15s ease-out);
+  @include transform(translateY(-30px));
+}
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  @include opacity(1);
+  @include transform(translateY(0px));
+}
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  @include opacity(0);
+}

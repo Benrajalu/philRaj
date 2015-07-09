@@ -42,4 +42,10 @@ $(window).load(function () {
       $(this).toggleClass('active');
       $('#mainNav').find('ul').toggleClass('show');
     })
+
+  // Pop up
+    $('.popTrigger').magnificPopup({ 
+      type: 'inline',
+      mainClass: 'mfp-fade'
+    });
 });
