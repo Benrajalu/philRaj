@@ -25,13 +25,13 @@ $(window).load(function () {
           activeEntry = $(menu).find('.active'),
           scale = $(menu).find('ul');
 
-        console.log(scale);
-
       $(scale).append('<li class="activeMark"></li>');
 
       var mark = $(scale).find('.activeMark');
-
-      $(mark).css({'width': $(activeEntry).outerWidth(), 'left' : $(activeEntry).position().left, 'opacity' : 1 });
+      
+      if(activeEntry.position()){
+        $(mark).css({'width': $(activeEntry).outerWidth(), 'left' : $(activeEntry).position().left, 'opacity' : 1 });
+      }
     }
 
     activeMenu();
