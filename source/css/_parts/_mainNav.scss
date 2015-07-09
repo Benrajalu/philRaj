@@ -121,6 +121,7 @@
 			img{
 				margin:0px;
 				top:0px;
+				left:-5px;
 			}
 		}
 		> ul{
@@ -152,13 +153,13 @@
 			display:block;
 			position:absolute;
 			top:24px;
-			right:15px;
+			right:5px;
 			z-index:99;
 			width:60px;
 			height:60px;
 			@include border-radius(100%);
 			border:0px;
-			background:$green;
+			background:transparent;
 			padding:0px;
 			line-height: 60px;
 			cursor:pointer;
@@ -167,9 +168,9 @@
 			}
 			i{
 				display:inline-block;
-				width:35px;
+				width:32px;
 				height:4px;
-				background:$white;
+				background:$blue;
 				text-indent:-999px;
 				vertical-align: middle;
 				position:relative;
@@ -179,9 +180,9 @@
 					@include transition(all 200ms ease-out);
 					content:"";
 					display:inline-block;
-					width:35px;
+					width:32px;
 					height:4px;
-					background:$white;
+					background:$blue;
 					position:absolute;
 					left:0px;
 				}
@@ -198,9 +199,11 @@
 				i{
 					background:$blue;
 					&:after{
+						background:$white;
 						@include transform(rotate(45deg) translateY(7px) translateX(8px))
 					}
 					&:before{
+						background:$white;
 						@include transform(rotate(-45deg) translateY(-7px) translateX(8px))
 					}
 				}
