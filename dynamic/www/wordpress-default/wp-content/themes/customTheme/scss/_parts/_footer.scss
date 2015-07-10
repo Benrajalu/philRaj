@@ -1,0 +1,32 @@
+#footer{
+	padding:0 40px;
+	text-align:right;
+	margin-bottom:30px;
+	.button{
+		i{
+			position:relative;
+			right:-2px;
+			top:0px;
+		}
+		span{
+			position:relative;
+			top:-1px;
+			display:inline-block;
+			white-space: nowrap;
+			vertical-align: middle;
+			max-width:0px;
+			overflow:hidden;
+			@include transition(all 200ms ease-out);
+		}
+		&:hover{
+			span{
+				max-width: 300px;
+				padding-left:10px;
+			}
+		}
+	}
+	@media only screen and (max-width: 620px){
+		text-align: center;
+		padding:0 15px;
+	}
+}

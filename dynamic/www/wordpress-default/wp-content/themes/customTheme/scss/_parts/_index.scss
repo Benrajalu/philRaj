@@ -1,0 +1,187 @@
+#contents{
+	padding:30px;
+
+	article.tableBlock{
+		display:table;
+		width:100%;
+		background:$blue;
+		img, .contents{
+			display:table-cell;
+			vertical-align: middle;
+		}
+		.contents{
+			padding:0 20px;
+			text-align:center;
+			position:relative;
+			h2, p, .button, hr{
+				position:relative;
+				z-index:2;
+			}
+			h2{
+				@include gill(light, 25px, $white);
+				margin-bottom:20px;
+			}
+			hr{
+				max-width:215px;
+				margin:0 auto 20px;
+				border:0px;
+				border-top:1px solid $green;
+			}
+			p{
+				@include gill(light, 16px, $white);
+				line-height: 1.4;
+				max-width:500px;
+				margin:0 auto 20px;
+			}
+			&:after{
+				content:"";
+				display:block;
+				position:absolute;
+				z-index:1;
+				width:50%;
+				height:100%;
+				background:$blue;
+				left:-40px;
+				top:0px;
+				@include transform(skew(-4deg));
+			}
+		}
+
+		&.greyBG{
+			background:$lightGrey;
+			h2, p{
+				color:$blue;
+			}
+			.contents{
+				&:after{
+					background:$lightGrey;
+				}
+			}
+		}
+
+		@media only screen and (max-width: 1300px){
+			.contents{
+				padding:0px 10px;
+				h2, hr, p{
+					margin-bottom:10px;
+				}
+				p{
+					font-size: 14px;
+				}
+			}
+		}
+
+		@media only screen and (max-width: 1125px){
+			display:table;
+			margin-bottom: 30px;
+			.contents{
+				padding:0px 20px;
+				h2, hr, p{
+					margin-bottom:20px;
+				}
+				p{
+					font-size: 16px;
+				}
+			}
+		}
+
+		@media only screen and (max-width: 620px){
+			img{
+				display:none;
+			}
+			.contents{
+				padding:20px;
+				&:after{
+					display: none;
+				}
+			}
+		}
+	}
+
+	#blogTeaser{
+		margin:30px auto 0px;
+		.blueBG{
+			background:$blue;
+			text-align:center;
+			padding:50px;
+			position:relative;
+			h2{
+				@include gill(light, 25px, $white);
+				margin-bottom:20px;
+			}
+			hr{
+				max-width:215px;
+				margin:0 auto 20px;
+				border:0px;
+				border-top:1px solid $green;
+			}
+			p{
+				@include gill(light, 16px, $white);
+				line-height: 1.4;
+				max-width:500px;
+				margin:0 auto 20px;
+			}
+			&:after{
+				content:"";
+				display:block;
+				width:19px;
+				height:36px;
+				background:url('../assets/img/arrow.png') center center no-repeat;
+				position:absolute;
+				top:50%;
+				margin-top:-15px;
+				right:-19px;
+				@media only screen and (max-width: 1125px){
+					@include transform(rotate(90deg));
+					top:auto;
+					bottom:-26px;
+					left:50%;
+					margin:0px 0px 0px -10px;
+				}
+			}
+		}
+		.greyBG{
+			background:$lightGrey;
+			padding:0 50px;
+			a{
+				text-decoration: none;
+				display:block;
+				&:hover{
+					.meta li span{
+						text-decoration: underline;
+					}
+				}
+			}
+			strong{
+				@include gill(medium, 15px, $blue);
+				text-transform: uppercase;
+			}
+			h3{
+				@include gill(light, 30px, $blue);
+				margin-bottom:10px;
+			}
+			p{
+				margin-bottom:15px;
+				@include gill(light, 16px, #454545);
+				line-height: 1.1;
+			}
+			.meta{
+				li{
+					display:inline-block;
+					@include gill(regular, 16px, $blue);
+					span{
+						color:$green;
+					}
+				}
+			}
+			@media only screen and (max-width: 1125px){
+				padding:30px 30px 40px;
+			}
+		}
+	}
+
+
+	@media only screen and (max-width: 620px){
+		padding:0px 0px 20px 0px;
+	}
+}
