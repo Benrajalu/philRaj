@@ -19,11 +19,10 @@
 		<?php wp_footer(); ?>
 
 		<div id="contact" class="mfp-hide popUp">
-		    <h3>Contactez-moi</h3>
+		    <h3>Contact</h3>
 		    <hr />
-		    <p>Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate.</p>
-		    <a href="mailto:philippe.rajalu@orange.fr" class="button">Envoyez-moi un mail</a>
-		    <p><strong>Telephone : 06 78 11 38 87</strong></p>
+		    <p>Vous voulez organiser le fonctionnement de votre conseil d'administration, structurer le fonctionnement de votre comité de direction, recruter un collaborateur, former vos équipes ? Laissez-moi vos coordonnées par mail ainsi que l'objet de votre demande, je vous téléphone rapidement.</p>
+		    <a href="mailto:philippe@rajaluconseil.fr" class="button">Envoyez-moi un mail</a>
 		</div>
 
 			<script type="text/javascript" src="<?php echo get_bloginfo('template_directory'); ?>/assets/js/vendor/jquery.magnific-popup.min.js"></script>

@@ -72,7 +72,7 @@
 	}
 	.greyBG{
 		background:$lightGrey;
-		padding:0 60px;
+		padding:30px 60px !important;
 		text-align: center;
 		p{
 			margin-bottom:15px;
@@ -83,7 +83,7 @@
 		}
 		
 		@media only screen and (max-width: 1125px){
-			padding:30px 30px 40px;
+			padding:30px 30px 40px !important;
 		}
 	}
 
@@ -100,11 +100,45 @@
 .wysiwyg{
 	text-align:left;
 	&.row{
-		max-width:800px;
-		padding:10px;
+		max-width:880px;
+		padding:10px 40px;
+		@media only screen and (max-width: 600px){
+			padding:10px 15px;
+		}
 	}
-	img{
+	img, figure{
 		max-width:100%;
+		&.aligncenter{
+			display:block;
+			margin:0 auto 25px;
+		}
+		&.alignright{
+			float:right;
+			position:relative;
+			right:-40px;
+			margin-bottom:25px;
+			text-align:right;
+		}
+		&.alignleft{
+			float:left;
+			position:relative;
+			left:-40px;
+			margin-bottom:25px;
+			text-align:left;
+		}
+		figcaption{
+			padding:3px 0px;
+			@include gill(light, 12px, $greyText);
+		}
+		@media only screen and (max-width: 600px){
+			&.alignright, &.alignleft{
+				display:block;
+				margin:0 auto 25px;
+				float: none;
+				position:static;
+				text-align:left;
+			}
+		}
 	}
 	p, ul, ol, blockquote{
 		margin-bottom:20px !important;

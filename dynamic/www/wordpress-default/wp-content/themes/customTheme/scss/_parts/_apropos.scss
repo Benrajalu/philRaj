@@ -18,11 +18,17 @@
 	}
 
 	#logoList{
-		margin:80px auto 60px;
+		margin:60px auto 60px;
+		@include clearfix();
 		li{
 			display:inline-block;
 			margin:0px 10px 20px;
 			max-width:90%;
+			vertical-align: middle;
+			img{
+				display:block;
+				width:100%;
+			}
 		}
 	}
 }
@@ -44,6 +50,7 @@
 		position:relative;
 		margin-bottom:10px;
 		text-align: left;
+		vertical-align: top;
 		a{
 			text-decoration: none;
 			display:block;
@@ -52,12 +59,16 @@
 					color:$white;
 					background:$green;
 				}
+				img{
+					opacity:0.8;
+				}
 			}
 		}
 		img{
 			width:100%;
 			display:block;
 			margin-bottom:15px;
+			@include transition(all 200ms ease-out);
 		}
 		p.data{
 			@include gill(light, 16px, $blue);

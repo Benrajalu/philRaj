@@ -80,12 +80,6 @@ function customTheme_setup() {
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 825, 510, true );
 
-	// This theme uses wp_nav_menu() in two locations.
-	register_nav_menus( array(
-		'primary' => __( 'Primary Menu',      'customTheme' ),
-		'social'  => __( 'Social Links Menu', 'customTheme' ),
-	) );
-
 	/*
 	 * Switch default core markup for search form, comment form, and comments
 	 * to output valid HTML5.
@@ -103,15 +97,6 @@ function customTheme_setup() {
 		'aside', 'image', 'video', 'quote', 'link', 'gallery', 'status', 'audio', 'chat'
 	) );
 
-	$color_scheme  = customTheme_get_color_scheme();
-	$default_color = trim( $color_scheme[0], '#' );
-
-	// Setup the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'customTheme_custom_background_args', array(
-		'default-color'      => $default_color,
-		'default-attachment' => 'fixed',
-	) ) );
-
 	/*
 	 * This theme styles the visual editor to resemble the theme style,
 	 * specifically font, colors, icons, and column width.
@@ -121,25 +106,6 @@ function customTheme_setup() {
 endif; // customTheme_setup
 add_action( 'after_setup_theme', 'customTheme_setup' );
 
-/**
- * Register widget area.
- *
- * @since Custom Theme 2.0
- *
- * @link https://codex.wordpress.org/Function_Reference/register_sidebar
- */
-function customTheme_widgets_init() {
-	register_sidebar( array(
-		'name'          => __( 'Widget Area', 'customTheme' ),
-		'id'            => 'sidebar-1',
-		'description'   => __( 'Add widgets here to appear in your sidebar.', 'customTheme' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-}
-add_action( 'widgets_init', 'customTheme_widgets_init' );
 
 if ( ! function_exists( 'customTheme_fonts_url' ) ) :
 /**
@@ -258,47 +224,6 @@ function customTheme_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'customTheme_scripts' );
 
-/**
- * Add featured image as background image to post navigation elements.
- *
- * @since Custom Theme 2.0
- *
- * @see wp_add_inline_style()
- */
-function customTheme_post_nav_background() {
-	if ( ! is_single() ) {
-		return;
-	}
-
-	$previous = ( is_attachment() ) ? get_post( get_post()->post_parent ) : get_adjacent_post( false, '', true );
-	$next     = get_adjacent_post( false, '', false );
-	$css      = '';
-
-	if ( is_attachment() && 'attachment' == $previous->post_type ) {
-		return;
-	}
-
-	if ( $previous &&  has_post_thumbnail( $previous->ID ) ) {
-		$prevthumb = wp_get_attachment_image_src( get_post_thumbnail_id( $previous->ID ), 'post-thumbnail' );
-		$css .= '
-			.post-navigation .nav-previous { background-image: url(' . esc_url( $prevthumb[0] ) . '); }
-			.post-navigation .nav-previous .post-title, .post-navigation .nav-previous a:hover .post-title, .post-navigation .nav-previous .meta-nav { color: #fff; }
-			.post-navigation .nav-previous a:before { background-color: rgba(0, 0, 0, 0.4); }
-		';
-	}
-
-	if ( $next && has_post_thumbnail( $next->ID ) ) {
-		$nextthumb = wp_get_attachment_image_src( get_post_thumbnail_id( $next->ID ), 'post-thumbnail' );
-		$css .= '
-			.post-navigation .nav-next { background-image: url(' . esc_url( $nextthumb[0] ) . '); border-top: 0; }
-			.post-navigation .nav-next .post-title, .post-navigation .nav-next a:hover .post-title, .post-navigation .nav-next .meta-nav { color: #fff; }
-			.post-navigation .nav-next a:before { background-color: rgba(0, 0, 0, 0.4); }
-		';
-	}
-
-	wp_add_inline_style( 'customTheme-style', $css );
-}
-add_action( 'wp_enqueue_scripts', 'customTheme_post_nav_background' );
 
 /**
  * Display descriptions in main navigation.
@@ -379,11 +304,13 @@ add_filter( 'wp_nav_menu_items', 'add_contact_to_nav', 10, 2 );
 
 function add_contact_to_nav( $items, $args )
 {
-    $items .= '<li><a href="#contact" class="popTrigger">Contactez-moi</a></li>';
+    $items .= '<li><a href="#contact" class="popTrigger">Contact</a></li>';
     return $items;
 }
 
 
 if ( function_exists( 'add_image_size' ) ) { 
-	add_image_size( 'articleteaser', 505, 191 );
+	add_image_size( 'articleteaser', 505, 191, true);
 }
+
+update_option('image_default_link_type','none');

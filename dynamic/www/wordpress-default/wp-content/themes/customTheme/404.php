@@ -9,22 +9,24 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div class="row padding">
+		<article id="intro">
+			<div class="contents">
+				<h1>404</h1>
+				<p class="noPadding">Cette page n'existe pas... Cependant, ces articles peuvent vous intéresser.</p>
+			</div>
+		</article>
+	</div>
 
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'customTheme' ); ?></h1>
-				</header><!-- .page-header -->
-
-				<div class="page-content">
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'customTheme' ); ?></p>
-
-					<?php get_search_form(); ?>
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
-
-		</main><!-- .site-main -->
-	</div><!-- .content-area -->
+	<div id="blog">
+		<?php
+		$args = array(
+			'posts_per_page' => -1
+		);
+		$query = new WP_Query( $args ); ?>
+		<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+				<?php get_template_part( 'content', 'teaser' ); ?>
+		<?php endwhile; ?>
+	</div>
 
 <?php get_footer(); ?>

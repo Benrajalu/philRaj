@@ -22,7 +22,8 @@ get_header(); ?>
 		<?php
 		$args = array(
 			'posts_per_page' => -1,
-			'category_name'  => 'journal'
+			'category_name'  => 'journal', 
+			'category__not_in' => 3
 		);
 		$query = new WP_Query( $args ); ?>
 		<?php while ( $query->have_posts() ) : $query->the_post(); ?>
