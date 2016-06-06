@@ -3,7 +3,7 @@
 
 // ** MySQL settings ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'sugarfirdaddy.mysql.db');
+define('DB_NAME', 'sugarfirdaddy');
 
 /** MySQL database username */
 define('DB_USER', 'sugarfirdaddy');
